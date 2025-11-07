@@ -1,9 +1,10 @@
-# This repository was created by Ali Hajian as part of university coursework.
+# Ali Hajian
+# کتاب خونه ها 
 import json
 
-
+# دیکشنری
 carts = {}
-
+# تابع ها
 def AddItem():
     Kala = input("enter Products Name: ")
     price = int(input("Enter The Price: "))
@@ -20,9 +21,9 @@ def show_carts():
             print(f"{i}. Product Name: {name:<10} || Price: {price}")
             total += price
 
-
-        discount_rate = 0.02  
-        tax_rate = 0.10     
+        # محاسبه تخفیف و مالیات
+        discount_rate = 0.02   # 10% تخفیف
+        tax_rate = 0.10       # 9% مالیات
 
         discount = total * discount_rate
         taxed_total = (total - discount) * (1 + tax_rate)
@@ -70,7 +71,7 @@ def load_items():
         carts = {}
         print("File is empty or invalid. Starting fresh.")
 
-
+# بدنه اصلی 
 load_items()
 while True:
 
@@ -103,4 +104,3 @@ while True:
             print("not valid")
 
    
-

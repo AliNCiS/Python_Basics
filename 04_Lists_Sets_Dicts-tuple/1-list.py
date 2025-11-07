@@ -36,3 +36,29 @@ for i, fruit in enumerate(fruits, start=1):
 # List comprehension
 squared = [x**2 for x in range(1, 6)]
 print(squared)  # [1,4,9,16,25]
+
+
+# create list for
+numbers = []
+for i in range(5):
+    numbers.append(i)
+print(numbers)
+
+# or List Comprehension
+
+numbers = [i for i in range(5)]
+print(numbers)
+
+# for in item 
+squares = [x**2 for x in range(6)]
+print(squares)
+
+
+# if
+even_numbers = [x for x in range(10) if x % 2 == 0]
+print(even_numbers)
+
+# if and else 
+labels = ["even" if x % 2 == 0 else "odd" for x in range(5)]
+print(labels)
+
